@@ -4,28 +4,34 @@ import (
 	"daulay-partners/database"
 	"daulay-partners/handlers"
 	"fmt"
+	"os"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	// Connect to database
 	database.Connect()
 
-	// Setup router
 	r := gin.Default()
 
-	// CORS for Vue frontend
+	// CORS - allow all origins for simplicity
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:5173", "http://localhost:3000"},
+		AllowAllOrigins:  true,
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Accept"},
-		AllowCredentials: true,
+		AllowCredentials: false,
 	}))
 
 	// Serve uploaded files
 	r.Static("/uploads", "../uploads")
+
+	// Serve Vue frontend (production build)
+	r.Static("/assets", "../frontend/dist/assets")
+	r.StaticFile("/favicon.svg", "../frontend/dist/favicon.svg")
+	r.NoRoute(func(c *gin.Context) {
+		c.File("../frontend/dist/index.html")
+	})
 
 	// API routes
 	api := r.Group("/api/v1")
@@ -42,6 +48,10 @@ func main() {
 		}
 	}
 
-	fmt.Println("🚀 Backend running on http://localhost:8080")
-	r.Run(":8080")
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+	fmt.Printf("🚀 Server running on port %s\n", port)
+	r.Run(":" + port)
 }
