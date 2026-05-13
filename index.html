@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Putusan Hukum | Daulay & Partners</title>
+    <meta name="description" content="Pengumuman putusan-putusan hukum terbaru dari Firma Hukum Daulay & Partners. Informasi resmi dan terpercaya.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" width="32" height="32" fill="none">
+                        <path d="M20 4L4 12v4l16 8 16-8v-4L20 4z" fill="url(#g1)" opacity="0.9"/>
+                        <path d="M4 20v4l16 8 16-8v-4L20 28 4 20z" fill="url(#g1)" opacity="0.6"/>
+                        <path d="M4 28v4l16 8 16-8v-4L20 36 4 28z" fill="url(#g1)" opacity="0.3"/>
+                        <defs><linearGradient id="g1" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#e2d1a8"/><stop offset="1" stop-color="#8a7340"/></linearGradient></defs>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">Daulay</span>
+                    <span class="logo-sub">& Partners</span>
+                </div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#beranda" class="active">Beranda</a></li>
+                <li><a href="#putusan">Putusan</a></li>
+                <li><a href="#kategori">Kategori</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="beranda">
+        <canvas class="hero-particles" id="heroParticles"></canvas>
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="hero-grid-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Pengumuman Resmi 2026
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Putusan Hukum</span>
+                <span class="title-line gold-text">Daulay & Partners</span>
+            </h1>
+            <p class="hero-subtitle">Portal resmi pengumuman putusan-putusan hukum terbaru. Transparansi dan keadilan adalah fondasi kami dalam menegakkan supremasi hukum.</p>
+            <div class="hero-actions">
+                <a href="#putusan" class="btn btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                    Lihat Putusan Terbaru
+                </a>
+                <a href="#tentang" class="btn btn-outline">
+                    Tentang Kami
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="247">0</span>
+                    <span class="stat-label">Total Putusan</span>
+                    <div class="stat-bar"><div class="stat-bar-fill" style="width:85%"></div></div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="98">0</span>
+                    <span class="stat-label">% Kemenangan</span>
+                    <div class="stat-bar"><div class="stat-bar-fill" style="width:98%"></div></div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="15">0</span>
+                    <span class="stat-label">Tahun Pengalaman</span>
+                    <div class="stat-bar"><div class="stat-bar-fill" style="width:60%"></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- Marquee Ticker -->
+    <div class="ticker-bar">
+        <div class="ticker-content">
+            <span class="ticker-item">📢 Putusan Baru: No. 245/Pdt.G/2025/PN.Jkt.Sel — Dikabulkan</span>
+            <span class="ticker-item">⚖ Sidang PKPU PT Sejahtera Abadi dijadwalkan 15 Juni 2026</span>
+            <span class="ticker-item">🏛 Pembatalan IMB oleh PTUN Jakarta — Cacat Prosedur</span>
+            <span class="ticker-item">📋 Total 247 putusan telah diarsipkan secara digital</span>
+            <span class="ticker-item">📢 Putusan Baru: No. 245/Pdt.G/2025/PN.Jkt.Sel — Dikabulkan</span>
+            <span class="ticker-item">⚖ Sidang PKPU PT Sejahtera Abadi dijadwalkan 15 Juni 2026</span>
+            <span class="ticker-item">🏛 Pembatalan IMB oleh PTUN Jakarta — Cacat Prosedur</span>
+            <span class="ticker-item">📋 Total 247 putusan telah diarsipkan secara digital</span>
+        </div>
+    </div>
+
+    <!-- Search & Filter -->
+    <section class="search-section" id="putusan">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Database Putusan</div>
+                <h2 class="section-title">Putusan <span class="gold-text">Terbaru</span></h2>
+                <p class="section-desc">Telusuri putusan-putusan hukum yang telah diumumkan secara resmi</p>
+            </div>
+            <div class="search-bar">
+                <div class="search-input-wrap">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                    <input type="text" id="searchInput" placeholder="Cari nomor putusan, pihak, atau kata kunci..." autocomplete="off">
+                    <div class="search-shortcut">⌘K</div>
+                </div>
+                <div class="filter-tabs" id="filterTabs">
+                    <button class="filter-tab active" data-filter="all">
+                        <span class="filter-dot"></span> Semua
+                    </button>
+                    <button class="filter-tab" data-filter="perdata">
+                        <span class="filter-dot dot-perdata"></span> Perdata
+                    </button>
+                    <button class="filter-tab" data-filter="pidana">
+                        <span class="filter-dot dot-pidana"></span> Pidana
+                    </button>
+                    <button class="filter-tab" data-filter="tun">
+                        <span class="filter-dot dot-tun"></span> TUN
+                    </button>
+                    <button class="filter-tab" data-filter="niaga">
+                        <span class="filter-dot dot-niaga"></span> Niaga
+                    </button>
+                </div>
+                <div class="search-results-count" id="resultsCount"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Decisions Grid -->
+    <section class="decisions-section">
+        <div class="container">
+            <div class="decisions-grid" id="decisionsGrid"></div>
+            <div class="empty-state" id="emptyState" style="display:none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="64" height="64"><path d="M9 12h6m-3-3v6m-7 4h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                <p>Tidak ada putusan yang ditemukan</p>
+                <span>Coba ubah kata kunci atau filter pencarian</span>
+            </div>
+            <button class="btn btn-primary btn-load-more" id="loadMoreBtn">
+                Muat Lebih Banyak
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories-section" id="kategori">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Bidang Hukum</div>
+                <h2 class="section-title">Kategori <span class="gold-text">Hukum</span></h2>
+                <p class="section-desc">Jelajahi putusan berdasarkan bidang hukum yang ditangani</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card" data-category="perdata">
+                    <div class="cat-glow cat-glow-blue"></div>
+                    <div class="cat-icon-wrap blue">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6M9 16h6M13 3H6a2 2 0 00-2 2v14a2 2 0 002 2h12a2 2 0 002-2V8l-5-5z"/><path d="M13 3v5h5"/></svg>
+                    </div>
+                    <h3>Hukum Perdata</h3>
+                    <p>Sengketa kontrak, wanprestasi, dan perbuatan melawan hukum</p>
+                    <div class="cat-footer">
+                        <span class="cat-count">89 Putusan</span>
+                        <span class="cat-arrow">→</span>
+                    </div>
+                </div>
+                <div class="category-card" data-category="pidana">
+                    <div class="cat-glow cat-glow-red"></div>
+                    <div class="cat-icon-wrap red">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Hukum Pidana</h3>
+                    <p>Perkara pidana umum, korupsi, dan tindak pidana khusus</p>
+                    <div class="cat-footer">
+                        <span class="cat-count">64 Putusan</span>
+                        <span class="cat-arrow">→</span>
+                    </div>
+                </div>
+                <div class="category-card" data-category="tun">
+                    <div class="cat-glow cat-glow-yellow"></div>
+                    <div class="cat-icon-wrap yellow">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M3 7v1a3 3 0 006 0V7m6 0v1a3 3 0 006 0V7M6 21V10m12 11V10M3 7l9-4 9 4"/></svg>
+                    </div>
+                    <h3>Tata Usaha Negara</h3>
+                    <p>Sengketa keputusan administrasi pemerintahan</p>
+                    <div class="cat-footer">
+                        <span class="cat-count">42 Putusan</span>
+                        <span class="cat-arrow">→</span>
+                    </div>
+                </div>
+                <div class="category-card" data-category="niaga">
+                    <div class="cat-glow cat-glow-green"></div>
+                    <div class="cat-icon-wrap green">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+                    </div>
+                    <h3>Hukum Niaga</h3>
+                    <p>Kepailitan, PKPU, HKI, dan persaingan usaha</p>
+                    <div class="cat-footer">
+                        <span class="cat-count">52 Putusan</span>
+                        <span class="cat-arrow">→</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about-section" id="tentang">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="section-header left">
+                        <div class="section-tag">Profil Firma</div>
+                        <h2 class="section-title">Tentang <span class="gold-text">Daulay & Partners</span></h2>
+                    </div>
+                    <p class="about-text">Firma Hukum <strong>Daulay & Partners</strong> telah berdiri sejak 2011 dan berkomitmen untuk memberikan layanan hukum terbaik dengan integritas tinggi. Kami percaya bahwa transparansi dalam setiap proses hukum adalah kunci keadilan.</p>
+                    <p class="about-text">Portal ini didedikasikan untuk menginformasikan putusan-putusan hukum secara terbuka kepada publik dan pihak-pihak terkait.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+                            </div>
+                            <span>Transparansi Penuh</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+                            </div>
+                            <span>Pembaruan Real-time</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+                            </div>
+                            <span>Akses Publik 24/7</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+                            </div>
+                            <span>Arsip Digital Lengkap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-card glass">
+                        <div class="about-card-glow"></div>
+                        <div class="about-card-icon">⚖</div>
+                        <h3>Keadilan untuk Semua</h3>
+                        <p>Setiap putusan mencerminkan komitmen kami terhadap keadilan dan supremasi hukum di Indonesia</p>
+                        <div class="about-card-stats">
+                            <div class="acs-item">
+                                <span class="acs-val">4.9</span>
+                                <span class="acs-lbl">Rating</span>
+                            </div>
+                            <div class="acs-item">
+                                <span class="acs-val">500+</span>
+                                <span class="acs-lbl">Klien</span>
+                            </div>
+                            <div class="acs-item">
+                                <span class="acs-val">25</span>
+                                <span class="acs-lbl">Advokat</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section" id="kontak">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Hubungi Kami</div>
+                <h2 class="section-title">Butuh <span class="gold-text">Informasi</span>?</h2>
+                <p class="section-desc">Hubungi tim kami untuk informasi lebih lanjut tentang putusan</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon-wrap">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3>Alamat</h3>
+                    <p>Jl. Sudirman Kav. 52-53<br>Jakarta Selatan 12190</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon-wrap">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    </div>
+                    <h3>Telepon</h3>
+                    <p>(021) 5555-1234<br>+62 812-3456-7890</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon-wrap">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p>info@daulay.co.id<br>putusan@daulay.co.id</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="nav-logo" style="margin-bottom:16px;">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 40 40" width="28" height="28" fill="none">
+                                <path d="M20 4L4 12v4l16 8 16-8v-4L20 4z" fill="url(#g2)" opacity="0.9"/>
+                                <path d="M4 20v4l16 8 16-8v-4L20 28 4 20z" fill="url(#g2)" opacity="0.6"/>
+                                <path d="M4 28v4l16 8 16-8v-4L20 36 4 28z" fill="url(#g2)" opacity="0.3"/>
+                                <defs><linearGradient id="g2" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#e2d1a8"/><stop offset="1" stop-color="#8a7340"/></linearGradient></defs>
+                            </svg>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-name">Daulay</span>
+                            <span class="logo-sub">& Partners</span>
+                        </div>
+                    </div>
+                    <p>Firma hukum terpercaya dengan dedikasi penuh terhadap keadilan dan transparansi hukum di Indonesia.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigasi</h4>
+                    <a href="#beranda">Beranda</a>
+                    <a href="#putusan">Putusan</a>
+                    <a href="#kategori">Kategori</a>
+                    <a href="#kontak">Kontak</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Layanan</h4>
+                    <a href="#">Konsultasi Hukum</a>
+                    <a href="#">Litigasi</a>
+                    <a href="#">Arbitrase</a>
+                    <a href="#">Corporate Law</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Daulay & Partners. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Decision Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modalClose">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+            <div class="modal-content" id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
