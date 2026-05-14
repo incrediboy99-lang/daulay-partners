@@ -1,8 +1,8 @@
 import axios from 'axios'
 
-const isProd = window.location.hostname !== 'localhost'
+const isLocal = typeof window !== 'undefined' && window.location.hostname === 'localhost'
 const api = axios.create({
-  baseURL: isProd ? '/api/v1' : 'http://localhost:8080/api/v1',
+  baseURL: isLocal ? 'http://localhost:8080/api/v1' : '/api',
   headers: { 'Accept': 'application/json' }
 })
 
