@@ -15,7 +15,6 @@ func main() {
 
 	r := gin.Default()
 
-	// CORS - allow all origins for simplicity
 	r.Use(cors.New(cors.Config{
 		AllowAllOrigins:  true,
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
@@ -24,13 +23,13 @@ func main() {
 	}))
 
 	// Serve uploaded files
-	r.Static("/uploads", "../uploads")
+	r.Static("/uploads", "./uploads")
 
 	// Serve Vue frontend (production build)
-	r.Static("/assets", "../frontend/dist/assets")
-	r.StaticFile("/favicon.svg", "../frontend/dist/favicon.svg")
+	r.Static("/assets", "./frontend/dist/assets")
+	r.StaticFile("/favicon.svg", "./frontend/dist/favicon.svg")
 	r.NoRoute(func(c *gin.Context) {
-		c.File("../frontend/dist/index.html")
+		c.File("./frontend/dist/index.html")
 	})
 
 	// API routes
