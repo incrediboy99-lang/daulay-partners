@@ -4,7 +4,7 @@
   <nav class="navbar" :class="{scrolled: scrollY>50}">
     <div class="nav-container">
       <router-link to="/" class="nav-logo">
-        <div class="logo-icon"><svg viewBox="0 0 40 40" width="32" height="32" fill="none"><path d="M20 4L4 12v4l16 8 16-8v-4L20 4z" fill="url(#g1)" opacity=".9"/><path d="M4 20v4l16 8 16-8v-4L20 28 4 20z" fill="url(#g1)" opacity=".6"/><path d="M4 28v4l16 8 16-8v-4L20 36 4 28z" fill="url(#g1)" opacity=".3"/><defs><linearGradient id="g1" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#e2d1a8"/><stop offset="1" stop-color="#8a7340"/></linearGradient></defs></svg></div>
+        <div class="logo-icon"><svg viewBox="0 0 40 40" width="32" height="32" fill="none"><path d="M20 4L4 12v4l16 8 16-8v-4L20 4z" fill="url(#g1)" opacity=".9"/><path d="M4 20v4l16 8 16-8v-4L20 28 4 20z" fill="url(#g1)" opacity=".6"/><path d="M4 28v4l16 8 16-8v-4L20 36 4 28z" fill="url(#g1)" opacity=".3"/><defs><linearGradient id="g1" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#3ec97a"/><stop offset="1" stop-color="#165c38"/></linearGradient></defs></svg></div>
         <div class="logo-text"><span class="logo-name">Daulay</span><span class="logo-sub">&amp; Partners</span></div>
       </router-link>
       <ul class="nav-links" :class="{open: menuOpen}">
@@ -202,7 +202,7 @@ export default {
       for (let i = 0; i < 50; i++) ps.push({ x: Math.random()*c.width, y: Math.random()*c.height, vx:(Math.random()-.5)*.3, vy:(Math.random()-.5)*.3, r:Math.random()*1.5+.5, a:Math.random()*.3+.1 })
       const draw = () => {
         ctx.clearRect(0,0,c.width,c.height)
-        ps.forEach(p => { p.x+=p.vx;p.y+=p.vy; if(p.x<0)p.x=c.width;if(p.x>c.width)p.x=0;if(p.y<0)p.y=c.height;if(p.y>c.height)p.y=0; ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=`rgba(199,172,120,${p.a})`;ctx.fill() })
+        ps.forEach(p => { p.x+=p.vx;p.y+=p.vy; if(p.x<0)p.x=c.width;if(p.x>c.width)p.x=0;if(p.y<0)p.y=c.height;if(p.y>c.height)p.y=0; ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=`rgba(34,139,84,${p.a})`;ctx.fill() })
         requestAnimationFrame(draw)
       }
       draw()
