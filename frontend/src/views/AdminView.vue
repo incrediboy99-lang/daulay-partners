@@ -1,7 +1,7 @@
 <template>
 <div class="admin-page">
   <nav class="navbar scrolled"><div class="nav-container">
-    <router-link to="/" class="nav-logo"><div class="logo-icon"><svg viewBox="0 0 40 40" width="28" height="28" fill="none"><path d="M20 4L4 12v4l16 8 16-8v-4L20 4z" fill="url(#ga)" opacity=".9"/><path d="M4 20v4l16 8 16-8v-4L20 28 4 20z" fill="url(#ga)" opacity=".5"/><defs><linearGradient id="ga" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#e2d1a8"/><stop offset="1" stop-color="#8a7340"/></linearGradient></defs></svg></div><div class="logo-text"><span class="logo-name">Daulay</span><span class="logo-sub">&amp; Partners</span></div></router-link>
+    <router-link to="/" class="nav-logo"><div class="logo-icon"><svg viewBox="0 0 40 40" width="28" height="28" fill="none"><path d="M20 4L4 12v4l16 8 16-8v-4L20 4z" fill="url(#ga)" opacity=".9"/><path d="M4 20v4l16 8 16-8v-4L20 28 4 20z" fill="url(#ga)" opacity=".5"/><defs><linearGradient id="ga" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#3ec97a"/><stop offset="1" stop-color="#165c38"/></linearGradient></defs></svg></div><div class="logo-text"><span class="logo-name">ILHAM</span><span class="logo-sub">PARTNERSHIP</span></div></router-link>
     <div style="display:flex;gap:8px"><router-link to="/" class="btn btn-outline" style="padding:8px 16px;font-size:13px">← Beranda</router-link></div>
   </div></nav>
 

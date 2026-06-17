@@ -5,7 +5,7 @@
     <div class="nav-container">
       <router-link to="/" class="nav-logo">
         <div class="logo-icon"><svg viewBox="0 0 40 40" width="32" height="32" fill="none"><path d="M20 4L4 12v4l16 8 16-8v-4L20 4z" fill="url(#g1)" opacity=".9"/><path d="M4 20v4l16 8 16-8v-4L20 28 4 20z" fill="url(#g1)" opacity=".6"/><path d="M4 28v4l16 8 16-8v-4L20 36 4 28z" fill="url(#g1)" opacity=".3"/><defs><linearGradient id="g1" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#3ec97a"/><stop offset="1" stop-color="#165c38"/></linearGradient></defs></svg></div>
-        <div class="logo-text"><span class="logo-name">Daulay</span><span class="logo-sub">&amp; Partners</span></div>
+        <div class="logo-text"><span class="logo-name">ILHAM</span><span class="logo-sub">PARTNERSHIP</span></div>
       </router-link>
       <ul class="nav-links" :class="{open: menuOpen}">
         <li><a href="#beranda" @click="menuOpen=false">Beranda</a></li>
@@ -26,7 +26,7 @@
     <div class="hero-grid-bg"></div>
     <div class="hero-content">
       <div class="hero-badge"><span class="badge-dot"></span> Pengumuman Resmi 2026</div>
-      <h1 class="hero-title"><span class="title-line">Putusan Hukum</span><span class="title-line gold-text">Daulay &amp; Partners</span></h1>
+      <h1 class="hero-title"><span class="title-line">Putusan Hukum</span><span class="title-line gold-text">ILHAM PARTNERSHIP</span></h1>
       <p class="hero-subtitle">Portal resmi pengumuman putusan-putusan hukum terbaru. Transparansi dan keadilan adalah fondasi kami.</p>
       <div class="hero-actions">
         <a href="#putusan" class="btn btn-primary">Lihat Putusan Terbaru</a>
@@ -97,8 +97,8 @@
   <section class="about-section" id="tentang">
     <div class="container"><div class="about-grid">
       <div class="about-content">
-        <div class="section-header left"><div class="section-tag">Profil Firma</div><h2 class="section-title">Tentang <span class="gold-text">Daulay &amp; Partners</span></h2></div>
-        <p class="about-text">Firma Hukum <strong>Daulay &amp; Partners</strong> telah berdiri sejak 2011 dan berkomitmen memberikan layanan hukum terbaik dengan integritas tinggi.</p>
+        <div class="section-header left"><div class="section-tag">Profil Firma</div><h2 class="section-title">Tentang <span class="gold-text">ILHAM PARTNERSHIP</span></h2></div>
+        <p class="about-text">Firma Hukum <strong>ILHAM PARTNERSHIP</strong> telah berdiri sejak 2011 dan berkomitmen memberikan layanan hukum terbaik dengan integritas tinggi.</p>
         <p class="about-text">Portal ini didedikasikan untuk menginformasikan putusan-putusan hukum secara terbuka kepada publik.</p>
       </div>
       <div class="about-visual"><div class="about-card glass"><div class="about-card-glow"></div><div class="about-card-icon">⚖</div><h3>Keadilan untuk Semua</h3><p>Setiap putusan mencerminkan komitmen kami terhadap keadilan</p></div></div>
@@ -109,14 +109,14 @@
     <div class="container">
       <div class="section-header"><div class="section-tag">Hubungi Kami</div><h2 class="section-title">Butuh <span class="gold-text">Informasi</span>?</h2></div>
       <div class="contact-grid">
-        <div class="contact-card"><div class="contact-icon-wrap">📍</div><h3>Alamat</h3><p>Jl. Sudirman Kav. 52-53<br>Jakarta Selatan 12190</p></div>
+        <div class="contact-card"><div class="contact-icon-wrap">📍</div><h3>Alamat</h3><p>Ciputra Citra Towers (North Tower), lt. 3, Unit 03/A1<br>Jl. Benyamin Suaeb, Kav. 06, Kemayoran, DKI Jakarta, Jakarta Pusat</p></div>
         <div class="contact-card"><div class="contact-icon-wrap">📞</div><h3>Telepon</h3><p>(021) 5555-1234<br>+62 812-3456-7890</p></div>
-        <div class="contact-card"><div class="contact-icon-wrap">✉</div><h3>Email</h3><p>info@daulay.co.id<br>putusan@daulay.co.id</p></div>
+        <div class="contact-card"><div class="contact-icon-wrap">✉</div><h3>Email</h3><p>info@ilham-partnership.com<br>putusan@ilham-partnership.com</p></div>
       </div>
     </div>
   </section>
 
-  <footer class="footer"><div class="container"><div class="footer-bottom"><p>&copy; 2026 Daulay &amp; Partners. All rights reserved.</p></div></div></footer>
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p>&copy; 2026 ILHAM PARTNERSHIP. All rights reserved.</p></div></div></footer>
 
   <!-- Modal -->
   <div class="modal-overlay" :class="{active: modal}" @click.self="modal=null">
