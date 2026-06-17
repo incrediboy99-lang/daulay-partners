@@ -109,7 +109,7 @@
     <div class="container">
       <div class="section-header"><div class="section-tag">Hubungi Kami</div><h2 class="section-title">Butuh <span class="gold-text">Informasi</span>?</h2></div>
       <div class="contact-grid">
-        <div class="contact-card"><div class="contact-icon-wrap">📍</div><h3>Alamat</h3><p>Ciputra Citra Towers (North Tower), lt. 3, Unit 03/A1<br>Jl. Benyamin Suaeb, Kav. 06, Kemayoran, DKI Jakarta, Jakarta Pusat</p></div>
+        <a href="https://maps.app.goo.gl/zf3dK9DvnfWmCTyA9" target="_blank" class="contact-card" style="display:block; color:inherit;"><div class="contact-icon-wrap">📍</div><h3>Alamat</h3><p>Ciputra Citra Towers (North Tower), lt. 3, Unit 03/A1<br>Jl. Benyamin Suaeb, Kav. 06, Kemayoran, DKI Jakarta, Jakarta Pusat</p></a>
         <div class="contact-card"><div class="contact-icon-wrap">📞</div><h3>Telepon</h3><p>(021) 5555-1234<br>+62 812-3456-7890</p></div>
         <div class="contact-card"><div class="contact-icon-wrap">✉</div><h3>Email</h3><p>info@ilham-partnership.com<br>putusan@ilham-partnership.com</p></div>
       </div>
